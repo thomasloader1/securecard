@@ -1,0 +1,21 @@
+.bg-parallax-gray {
+    background: {
+        image: url('../img/icons/gray-galaxy.jpg');
+        position: center;
+        size: cover;
+        attachment: fixed;
+        repeat: no-repeat;
+        color: red;
+    }
+    min-height: 500px;
+}
+
+.bg-image-only {
+    background: {
+        image: url('../img/logo-textured.jpg');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+    width: 100%;
+}

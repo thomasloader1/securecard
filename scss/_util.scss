@@ -1,0 +1,140 @@
+.text {
+    &-warning {
+        color: $specialYellow !important;
+    }
+    &-green {
+        color: $backgroundGreen !important;
+    }
+}
+
+.nav-absolute {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.link {
+    a {
+        color: #232323;
+        font-weight: 400;
+        font-size: 20px;
+        transition: all .1s ease;
+    }
+    img {
+        width: inherit;
+        transition: all .1s ease;
+    }
+    &:hover {
+        a {
+            color: $backgroundGreen;
+        }
+        img {
+            transform: scale(1.2);
+        }
+    }
+    &-white {
+        @extend .link;
+        a {
+            color: white;
+        }
+    }
+}
+
+.top-nav-collapse {
+    background-color: rgba($color: #000000, $alpha: 0.8)!important;
+}
+
+.bg {
+    &-specialgray {
+        background-color: $specialGray;
+        &-strong {
+            background-color: $specialStrongGray;
+        }
+        &-light {
+            background-color: $specialLightGray;
+        }
+    }
+    &-specialgreen {
+        background-color: $backgroundGreen !important;
+        &-dark {
+            background-color: $specialGreenDark !important;
+        }
+    }
+}
+
+.font-weight-bolder {
+    font-weight: 900;
+}
+
+.nav-item {
+    letter-spacing: 1px;
+}
+
+.hr-custom {
+    padding: 3px;
+    width: 10%;
+    background-color: black;
+    &-warning {
+        @extend .hr-custom;
+        background-color: $specialYellow !important;
+    }
+}
+
+.nav-item {
+    position: relative;
+    &.font-weight-bold:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 90%;
+        height: 2px;
+        background-color: white;
+    }
+}
+
+.nav-link {
+    position: relative;
+    &:hover,
+    &:active {
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 90%;
+            height: 2px;
+            background-color: white;
+        }
+    }
+}
+
+.popover-body {
+    background-color: $backgroundGreen !important;
+    color: white;
+}
+
+.arrow::after {
+    border-top-color: $backgroundGreen !important;
+    border-bottom-color: $backgroundGreen !important;
+}
+
+//* Creo la clase .font-1 al .font-100 y .spacing-1 al .spacing-100
+@for $i from 1 through 100 {
+    .font-#{$i} {
+        font-size: #{$i}px !important;
+    }
+    .spacing-#{$i} {
+        letter-spacing: #{$i}px;
+    }
+    .zIndex-#{$i} {
+        z-index: #{$i} !important;
+    }
+}

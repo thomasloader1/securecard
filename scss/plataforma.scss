@@ -1,0 +1,158 @@
+.image-platform {
+    @include image-background('../img/platform-galaxy.jpg');
+}
+
+.grain-background {
+    @include image-background('../img/ratings-background.png');
+    width: 100%;
+    height: 100%;
+    &-atlas {
+        @include image-background('../img/market-background.png');
+        width: 100%;
+        height: 100%;
+    }
+    &-api {
+        @include image-background('../img/connectors-background.png');
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.threat {
+    position: absolute;
+    &-color {
+        @extend .threat;
+        width: 450px;
+        left: calc(50% - 225px);
+        top: calc(20% - 40px);
+    }
+    &-shadow {
+        @extend .threat;
+        width: 450px;
+        left: calc(50% - 225px);
+        top: calc(33% - 40px);
+    }
+    &-circles {
+        @extend .threat;
+        bottom: 0;
+        right: 0;
+    }
+    &-triangles {
+        @extend .threat;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    &-white {
+        @extend .line;
+        background: {
+            image: url('../img/icons/connectors-assets-animation/connectors-white-wave.png');
+            position: 0px 0px;
+            repeat: repeat-x;
+        }
+        height: 180px;
+        bottom: 0;
+    }
+    &-green {
+        @extend .line;
+        background: {
+            image: url('../img/icons/connectors-assets-animation/connectors-green-wave.png');
+            position: 0px 0px;
+            repeat: repeat-x;
+        }
+        height: 180px;
+        bottom: 0;
+    }
+    &-red {
+        @extend .line;
+        background: {
+            image: url('../img/icons/connectors-assets-animation/connectors-red-wave.png');
+            position: 0px 0px;
+            repeat: repeat-x;
+        }
+        height: 180px;
+        bottom: 0;
+    }
+}
+
+.api {
+    position: absolute;
+    &-left {
+        @extend .api;
+        top: 241px;
+        left: 76px;
+        width: 79px;
+    }
+    &-right {
+        @extend .api;
+        top: 241px;
+        right: 76px;
+        width: 79px;
+    }
+    &-color {
+        @extend .api;
+        width: 550px;
+        top: 50px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    &-shadow {
+        @extend .api;
+        width: 430px;
+        top: 193px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+}
+
+.market {
+    position: absolute;
+    &-shadow {
+        @extend .market;
+        width: 450px;
+        left: calc(50% - 225px);
+        top: calc(33% - 40px);
+    }
+    &-color {
+        @extend .market;
+        width: 450px;
+        top: calc(20% - 40px);
+        left: calc(50% - 225px);
+        z-index: 2;
+    }
+    &-yes-no {
+        @extend .market;
+        width: 500px;
+        top: 50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    &-landed-icons {
+        @extend .market;
+        bottom: 0;
+        left: 0;
+    }
+    &-landed-circles {
+        @extend .market;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.image-data {
+    background: {
+        image: url('../img/icons/funnel.png');
+        repeat: no-repeat;
+        position: center;
+        size: auto 100%;
+    }
+}
+
+@import '__animation';

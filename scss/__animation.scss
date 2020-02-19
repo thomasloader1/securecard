@@ -1,0 +1,207 @@
+.box-animation {
+    &-raitings {
+        max-width: 700px;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 0;
+        margin-left: auto;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    &-atlas {
+        max-width: 700px;
+        width: 100%;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    &-api {
+        max-width: 700px;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 0;
+        margin-left: auto;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    &-threat {
+        max-width: 700px;
+        width: 100%;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin-left: 0;
+        margin-right: auto;
+    }
+}
+
+.layer {
+    &-4 {
+        position: absolute;
+        top: calc(55% - 230px);
+        left: calc(58% - 200px);
+        width: 400px;
+    }
+    &-3 {
+        position: absolute;
+        top: calc(40% - 230px);
+        left: calc(50% - 200px);
+        width: 400px;
+    }
+    &-1 {
+        top: 30%;
+        left: 30%;
+        width: 340px;
+        position: absolute;
+    }
+}
+
+.a {
+    width: 100px; // ORIGINAL: 100 - EXPANDED: 150
+    top: -96px; // ORIGINAL: -96  - EXPANDED: -120
+    left: -67px; // ORIGINAL: -67 - EXPANDED: -87
+    position: absolute;
+    &:hover {
+        transform: scale(1.4);
+    }
+}
+
+.b {
+    width: 100px;
+    top: 19px;
+    left: 0px;
+    position: absolute;
+    &:hover {
+        transform: scale(1.4);
+    }
+}
+
+.c {
+    width: 100px;
+    top: 76px;
+    left: 100px;
+    position: absolute;
+    &:hover {
+        transform: scale(1.4);
+    }
+}
+
+.d {
+    width: 100px;
+    top: 39px;
+    left: 200px;
+    position: absolute;
+    &:hover {
+        transform: scale(1.4);
+    }
+}
+
+.f {
+    width: 100px;
+    top: 158px;
+    left: 240px;
+    position: absolute;
+    &:hover {
+        transform: scale(1.4);
+    }
+}
+
+.outline {
+    width: 197px;
+    top: 100px;
+    left: 192px;
+    position: absolute;
+    animation-name: moving;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+@keyframes moving {
+    0% {
+        top: 100px;
+        left: 192px;
+        transform: rotate(0.16turn);
+    }
+    20% {
+        //a
+        top: -150px;
+        left: -116px;
+        transform: rotate(0.2turn);
+    }
+    40% {
+        //B
+        top: -40px;
+        left: -50px;
+        transform: rotate(-0.2turn);
+    }
+    50% {
+        //C
+        top: 20px;
+        left: 50px;
+        transform: rotate(0.12turn);
+    }
+    70% {
+        //D
+        top: -15px;
+        left: 150px;
+        transform: rotate(-0.16turn);
+    }
+    100% {
+        //F
+        top: 100px;
+        left: 192px;
+        transform: rotate(-0.2turn);
+    }
+}
+
+@keyframes movingToB {
+    from {
+        top: inherit;
+        left: inherit;
+    }
+    to {
+        top: -40px;
+        left: -50px;
+    }
+}
+
+@keyframes movingToC {
+    from {
+        top: inherit;
+        left: inherit;
+    }
+    to {
+        top: 20px;
+        left: 50px;
+    }
+}
+
+@keyframes movingToD {
+    from {
+        top: inherit;
+        left: inherit;
+    }
+    to {
+        top: -15px;
+        left: 150px;
+    }
+}
+
+@keyframes movingToF {
+    from {
+        top: inherit;
+        left: inherit;
+    }
+    to {
+        top: 100px;
+        left: 192px;
+    }
+}

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'proxima_novaregular';
+    src: url('../img/fonts/ProximaNova/proximanova-regular-webfont.woff2') format('woff2'), url('../img/fonts/ProximaNova/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'space_monoregular';
+    src: url('../img/fonts/SpaceMono/spacemono-regular-webfont.woff2') format('woff2'), url('../img/fonts/SpaceMono/spacemono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caslonregular';
+    src: url('../img/fonts/Caslon/CaslonCP.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caslonbold';
+    src: url('../img/fonts/Caslon/CaslonCP.otf') format('otf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+.caslon {
+    font-family: 'caslonregular' !important;
+    &-bold {
+        font-family: 'caslonbold' !important;
+    }
+}
+
+.space-mono {
+    font-family: 'space_monoregular' !important;
+}
+
+.proxima-nova {
+    font-family: 'proxima_novaregular' !important;
+}

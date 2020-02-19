@@ -1,0 +1,18 @@
+html {
+    overflow-x: hidden;
+}
+
+.img-absolute-security {
+    right: 0;
+    height: 70% !important;
+}
+
+.img-grit {
+    position: relative;
+    background: {
+        image: url('../img/grit.png');
+        repeat: no-repeat;
+        color: #eee;
+        size: cover;
+    }
+}
