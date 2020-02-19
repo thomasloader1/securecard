@@ -126,6 +126,24 @@
     border-bottom-color: $backgroundGreen !important;
 }
 
+.carousel-indicators{
+    bottom: -50px;
+    li{
+        width: 17px;
+        height: 17px;
+        border: 3px solid $specialYellow;
+        background-color: unset;
+        opacity: 1;
+        transition: all .1s ease-in-out;
+        &:hover{
+            background-color: $specialYellow;           
+        }
+    }
+            .active{
+                background: $specialYellow;
+            }
+}
+
 //* Creo la clase .font-1 al .font-100 y .spacing-1 al .spacing-100
 @for $i from 1 through 100 {
     .font-#{$i} {
@@ -137,4 +155,6 @@
     .zIndex-#{$i} {
         z-index: #{$i} !important;
     }
+
+    
 }

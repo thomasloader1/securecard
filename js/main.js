@@ -58,3 +58,4 @@ $('[data-toggle="popover-hover-10"]').popover({
     placement: 'top',
     content: function() { return '<p class="font-weight-bold space-mono font-18">Ingeniería Social</p><p class="proxima-nova">SecurityScorecard identifica una variedad de factores relacionados con la ingeniería social, como los empleados que utilizan la información de sus cuentas corporativas para servicios, por ejemplo, redes sociales, cuentas de servicios, cuentas de finanzas personales y listas de comercialización que pueden ser explotadas. Además, la insatisfacción de los empleados se vigila mediante datos disponibles públicamente.</p>'; }
 });
+

@@ -1,0 +1,40 @@
+.img-absolute-atlas {
+    bottom: 0;
+    right: 0;
+}
+
+.bg-atlas-triangle {
+    background: {
+        image: url('../img/black-triangles.png');
+        position: center;
+        size: cover;
+        repeat: no-repeat;
+    }
+}
+
+.img-trama {
+    background-image: url("../img/cover-a.png");
+}
+
+.row-absolute {
+    top: 0;
+    left: 7%;
+    margin: auto;
+    width: 200px;
+}
+
+.bg-atlas-galaxy {
+    background: {
+        image: url("../img/galaxy.jpg");
+        position: center;
+        size: cover;
+    }
+}
+
+.bg-blue-atlas {
+    background: {
+        image: url('../img/blue-hex.jpg');
+        position: center;
+        size: cover;
+    }
+}

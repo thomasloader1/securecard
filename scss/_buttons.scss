@@ -4,6 +4,10 @@
         color: $textDarkGreen !important;
         letter-spacing: 3px;
         font-size: 16px;
+        &-reverse {
+            background-color: $textDarkGreen !important;
+            color: $backgroundGreen!important;
+        }
     }
     &-outline-warning {
         color: $specialYellow !important;
